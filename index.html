@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Restaurant</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <nav class="nav-header">
+                <a href="" class="logo"><strong class="strong">Taste.</strong> it</a>
+                <ul class="nav-link">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Aboute</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Reservation</a>
+                    </li>
+                    <li>
+                        <a href="">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-icons">
+                    <div class="icon_search">
+                        <i class="searchbtn ri-search-line" id="search-icon"></i>
+                        <div class="form_icon" id="form_icon" >
+                            <form action="" id="form-nav">
+                                <input type="search" placeholder="Nom Products" required>
+                                <button type="submit" class="ri-search-line search"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="icon_cart">
+                        <i class="cartbtn ri-shopping-cart-line" id="cart-shopping"></i>
+                        <div id="cart" class="cart">
+                            <span id="spn-cart">No Products In The Cart</span>
+                        </div>
+                    </div>
+                    <div class="icon_moon">
+                        <i class="ri-moon-line" id="change_theme"></i>
+                    </div>
+                </div>
+                <div class="header-menu">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="section-home">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/img-about/testimonial-bg.jpg" alt="">
+                    <div class="home-info">
+                        <h1 class="home-info-h1">TASTE.IT RESTAURANT</h1>
+                        <p>Best Qaulity</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/img-about/ouvrir-un-restaurant.webp" alt="">
+                    <div class="home-info">
+                        <h1 class="home-info-h1">TASTE.IT RESTAURANT</h1>
+                        <p>Cooking Since</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/img-about/FR_FR_WBX_LANDING_PAGE_COVER_FOOD-mobile.jpg" alt="">
+                    <div class="home-info">
+                        <h1 class="home-info-h1">TASTE.IT RESTAURANT</h1>
+                        <p>Food</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <section class="reservation">
+        <div class="resrvation-container container">
+            <div class="form-reservation">
+                <div class="box-reservation">
+                    <span>Take A</span>
+                    <h2>RESERVATION</h2>
+                    <form action="">
+                        <input type="text" placeholder="NAME">
+                        <input type="email" placeholder="Email">
+                        <input type="number" placeholder="PHONE">
+                        <input type="date">
+                        <input type="time">
+                        <textarea name="msg" id="msg"></textarea>
+                        <button class="btn-reservation"> BOOK A TABLE </button>
+                    </form>
+                </div>
+                <div class="box-reservation1">
+                    <h1>MARK WILLY </h1>
+                    <span>Head chef</span>
+                    <p>
+                        Rorem ipsum dolor sit amet , consecteutur 
+                        adipisicing elitsed eiusmod tempor incididunt
+                    </p>
+                    <h2>Mark Willy</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="queto">
+        <div class="text-queto">
+            <h3>NOW BOOKING</h3>
+            <h2>Private Dinners & Happy Howvs</h2>
+        </div>
+    </section>
+    <section id="menu" class="menu">
+        <div class="menu-heading">
+            <h3>Special Selections</h3>
+            <h1>From Our Menu</h1>
+            <div class="menu-square">
+                <div class="menu-sq"></div>
+                <div class="menu-sq"></div>
+                <div class="menu-sq"></div>
+            </div>
+        </div>
+        <div class="menu-selection" >
+            <div class="box-selection active" data-target="#dashed">
+                <i class="ri-bowl-fill"></i>
+                <span>Main Dishes</span>
+            </div>
+            <div class="box-selection" data-target="#starteds">
+                <i class="ri-restaurant-line"></i>
+                <span>Starters</span>
+            </div>
+            <div class="box-selection" data-target="#desserts">
+                <i class="ri-bowl-fill"></i>
+                <span>Desserts</span>
+            </div>
+            <div class="box-selection" data-target="#drinks">
+                <i class="ri-drinks-fill"></i>
+                <span>Drinks</span>
+            </div>
+        </div>
+        <!-- mai dashed -->
+        <div class="main-dashed show" id="dashed">
+            <div class="container main-container">
+                <div class="main-dashed-items">
+                    <div class="main-dashed-items-1">
+                        <div class="image-dashed">
+                            <img src="./images/service/1.jpeg" alt="">
+                        </div>
+                        <div class="info-dashed">
+                            <h1>Main Dish Item</h1>
+                            <div class="line"></div>
+                            <span>$29</span>
+                        </div>
+                    </div>
+                    <p>Searsoned and handcarved to order.</p>
+                </div>
+                <div class="main-dashed-items">
+                    <div class="main-dashed-items-1">
+                        <div class="image-dashed">
+                            <img src="./images/service/2.jpg" alt="">
+                        </div>
+                        <div class="info-dashed">
+                            <h1>Main Dish Item</h1>
+                            <div class="line"></div>
+                            <span>$29</span>
+                        </div>
+                    </div>
+                    <p>Searsoned and handcarved to order.</p>
+                </div>
+                <div class="main-dashed-items">
+                    <div class="main-dashed-items-1">
+                        <div class="image-dashed">
+                            <img src="./images/service/3.jpg" alt="">
+                        </div>
+                        <div class="info-dashed">
+                            <h1>Main Dish Item</h1>
+                            <div class="line"></div>
+                            <span>$29</span>
+                        </div>
+                    </div>
+                    <p>Searsoned and handcarved to order.</p>
+                </div>
+                <div class="main-dashed-items">
+                    <div class="main-dashed-items-1">
+                        <div class="image-dashed">
+                            <img src="./images/service/1.jpeg" alt="">
+                        </div>
+                        <div class="info-dashed">
+                            <h1>Main Dish Item</h1>
+                            <div class="line"></div>
+                            <span>$29</span>
+                        </div>
+                    </div>
+                    <p>Searsoned and handcarved to order.</p>
+                </div>
+                <div class="main-dashed-items">
+                    <div class="main-dashed-items-1">
+                        <div class="image-dashed">
+                            <img src="./images/service/1.jpeg" alt="">
+                        </div>
+                        <div class="info-dashed">
+                            <h1>Main Dish Item</h1>
+                            <div class="line"></div>
+                            <span>$29</span>
+                        </div>
+                    </div>
+                    <p>Searsoned and handcarved to order.</p>
+                </div>
+                <div class="main-dashed-items">
+                    <div class="main-dashed-items-1">
+                        <div class="image-dashed">
+                            <img src="./images/service/6.jpg" alt="">
+                        </div>
+                        <div class="info-dashed">
+                            <h1>Main Dish Item</h1>
+                            <div class="line"></div>
+                            <span>$29</span>
+                        </div>
+                    </div>
+                    <p>Searsoned and handcarved to order.</p>
+                </div>
+            </div>
+        </div>
+        <!--  main Starters -->
+        <div class="main-dashed" id="starteds">
+            <div class="container main-container">
+                <div class="main-dashed-items">
+                    <div class="main-dashed-items-1">
+                        <div class="image-dashed">
+                            <img src="./images/service/7.jpg" alt="">
+                        </div>
+                        <div class="info-dashed">
+                            <h1>Drink Dish Item</h1>
+                            <div class="line"></div>
+                            <span>$29</span>
+                        </div>
+                    </div>
+                    <p>Searsoned and handcarved to order.</p>
+                </div>
+                <div class="main-dashed-items">
+                    <div class="main-dashed-items-1">
+                        <div class="image-dashed">
+                            <img src="./images/service/8.webp" alt="">
+                        </div>
+                        <div class="info-dashed">
+                            <h1>Drink Dish Item</h1>
+                            <div class="line"></div>
+                            <span>$29</span>
+                        </div>
+                    </div>
+                    <p>Searsoned and handcarved to order.</p>
+                </div>
+            </div>
+        </div>
+        <!--  Desserts -->
+        <div class="main-dashed" id="desserts">
+            <div class="container main-container">
+                <div class="main-dashed-items">
+                    <div class="main-dashed-items-1">
+                        <div class="image-dashed">
+                            <img src="./images/service/1.jpeg" alt="">
+                        </div>
+                        <div class="info-dashed">
+                            <h1>Main Dish Item</h1>
+                            <div class="line"></div>
+                            <span>$29</span>
+                        </div>
+                    </div>
+                    <p>Searsoned and handcarved to order.</p>
+                </div>
+            </div>
+        </div>
+        <!--  Drinks -->
+        <div class="main-dashed" id="drinks">
+            <div class="container main-container">
+                <div class="main-dashed-items">
+                    <div class="main-dashed-items-1">
+                        <div class="image-dashed">
+                            <img src="./images/service/1.jpeg" alt="">
+                        </div>
+                        <div class="info-dashed">
+                            <h1>Main Dish Item</h1>
+                            <div class="line"></div>
+                            <span>$29</span>
+                        </div>
+                    </div>
+                    <p>Searsoned and handcarved to order.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container container-btn">
+            <button class="btn-reservation">View Full Menu</button>
+        </div>
+    </section>
+    <section class="events" id="events">
+        <div class="menu-heading">
+            <h1>Events</h1>
+            <div class="menu-square">
+                <div class="menu-sq"></div>
+                <div class="menu-sq"></div>
+                <div class="menu-sq"></div>
+            </div>
+        </div>
+        <div class="event-carts container">
+            <div class="event-swiper swiper">
+                <div class="swiper-wrapper">
+                    <article class="event-card swiper-slide">
+                        <h1>Independence Day</h1>
+                        <div class="event-info">
+                            <span>23-10-01</span>
+                            <span>08:00</span>
+                            <span>Bay Town, Citadel, Australia </span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, dignissimos iste, 
+                            incidunt nesciunt sapiente accusamus, dolorum voluptas amet obcaecati cum aspernatur
+                            et nam pariatur facere. Et alias iste dolorum dolores!
+                        </p>
+                    </article>
+                    <article class="event-card swiper-slide">
+                        <h1>Independence Day1</h1>
+                        <div class="event-info">
+                            <span>23-10-01</span>
+                            <span>08:00</span>
+                            <span>Bay Town, Citadel, Australia </span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, dignissimos iste, 
+                            incidunt nesciunt sapiente accusamus, dolorum voluptas amet obcaecati cum aspernatur
+                            et nam pariatur facere. Et alias iste dolorum dolores!
+                        </p>
+                    </article>
+                    <article class="event-card swiper-slide">
+                        <h1>Independence Day3</h1>
+                        <div class="event-info">
+                            <span>23-10-01</span>
+                            <span>08:00</span>
+                            <span>Bay Town, Citadel, Australia </span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, dignissimos iste, 
+                            incidunt nesciunt sapiente accusamus, dolorum voluptas amet obcaecati cum aspernatur
+                            et nam pariatur facere. Et alias iste dolorum dolores!
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <div class="menu-heading">
+            <h1>Our Gallery</h1>
+            <h2>Our  Untold Stories </h2>
+            <div class="menu-square">
+                <div class="menu-sq"></div>
+                <div class="menu-sq"></div>
+                <div class="menu-sq"></div>
+            </div>
+        </div>
+        <div class="garelly_container container">
+            <div class="garelly-swiper swiper">
+                <div class="swiper-wrapper">
+                    <article class="garelly-card swiper-slide">
+                        <div class="image-garelly">
+                            <img src="./images/service/1.jpeg" alt="" srcset="">
+                            <div class="aff"></div>
+                        </div>
+                        <div class="icon-search">
+                            <i class="searchbtn ri-search-line" id="search-icon"></i>
+                        </div>
+                    </article>
+                    <article class="garelly-card swiper-slide">
+                        <div class="image-garelly">
+                            <img src="./images/service/2.jpg" alt="" srcset="">
+                            <div class="aff"></div>
+                        </div>
+                        <div class="icon-search">
+                            <i class="searchbtn ri-search-line" id="search-icon"></i>
+                        </div>
+                    </article>
+                    <article class="garelly-card swiper-slide">
+                        <div class="image-garelly">
+                            <img src="./images/service/3.jpg" alt="" srcset="">
+                            <div class="aff"></div>
+                        </div>
+                        <div class="icon-search">
+                            <i class="searchbtn ri-search-line" id="search-icon"></i>
+                        </div>
+                    </article>
+                    <article class="garelly-card swiper-slide">
+                        <div class="image-garelly">
+                            <img src="./images/service/4.jpg" alt="" srcset="">
+                            <div class="aff"></div>
+                        </div>
+                        <div class="icon-search">
+                            <i class="searchbtn ri-search-line" id="search-icon"></i>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="garelly-swiper swiper">
+                <div class="swiper-wrapper">
+                    <article class="garelly-card swiper-slide">
+                        <div class="image-garelly">
+                            <img src="./images/service/1.jpeg" alt="" srcset="">
+                            <div class="aff"></div>
+                        </div>
+                        <div class="icon-search">
+                            <i class="searchbtn ri-search-line" id="search-icon"></i>
+                        </div>
+                    </article>
+                    <article class="garelly-card swiper-slide">
+                        <div class="image-garelly">
+                            <img src="./images/service/2.jpg" alt="" srcset="">
+                            <div class="aff"></div>
+                        </div>
+                        <div class="icon-search">
+                            <i class="searchbtn ri-search-line" id="search-icon"></i>
+                        </div>
+                    </article>
+                    <article class="garelly-card swiper-slide">
+                        <div class="image-garelly">
+                            <img src="./images/service/3.jpg" alt="" srcset="">
+                            <div class="aff"></div>
+                        </div>
+                        <div class="icon-search">
+                            <i class="searchbtn ri-search-line" id="search-icon"></i>
+                        </div>
+                    </article>
+                    <article class="garelly-card swiper-slide">
+                        <div class="image-garelly">
+                            <img src="./images/service/4.jpg" alt="" srcset="">
+                            <div class="aff"></div>
+                        </div>
+                        <div class="icon-search">
+                            <i class="searchbtn ri-search-line" id="search-icon"></i>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="teams" id="teams">
+        <div class="menu-heading">
+            <h1>Our Gallery</h1>
+            <h2>Our  Untold Stories </h2>
+            <div class="menu-square">
+                <div class="menu-sq"></div>
+                <div class="menu-sq"></div>
+                <div class="menu-sq"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="team-swiper swiper">
+                <div class="swiper-wrapper">
+                    <article class="team-card swiper-slide">
+                        <img src="./images/testemonials/testimonial-perfil-1.png" alt="" srcset="">
+                        <div class="team-info">
+                            <h1>Alex John</h1>
+                            <span>Chenise Cuisine</span>
+                        </div>
+                    </article>
+                    <article class="team-card swiper-slide">
+                        <img src="./images/testemonials/testimonial-perfil-2.png" alt="" srcset="">
+                        <div class="team-info">
+                            <h1>Alex John</h1>
+                            <span>Chenise Cuisine</span>
+                        </div>
+                    </article>
+                    <article class="team-card swiper-slide">
+                        <img src="./images/testemonials/testimonial-perfil-3.png" alt="" srcset="">
+                        <div class="team-info">
+                            <h1>Alex John</h1>
+                            <span>Chenise Cuisine</span>
+                        </div>
+                    </article>
+                    <article class="team-card swiper-slide">
+                        <img src="./images/testemonials/testimonial-perfil-4.png" alt="" srcset="">
+                        <div class="team-info">
+                            <h1>Alex John</h1>
+                            <span>Chenise Cuisine</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="table-food">
+        <div class="container">
+            <div class="info-table_food">
+                <h1>We Make Delicious & Nutricious Food</h1>
+                <button class="btn-reservation">Book A Table Now</button>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="box-footer">
+                    <h1>TASTE.IT</h1>
+                    <div class="taste-info">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eveniet odio vel eos mollitia laudantium iure, quia accusamus 
+                            fugiat asperiores rerum voluptatum ducimus deleniti dolor esse. 
+                            Alias laudantium voluptatibus amet modi?
+                        </p>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <h1>ADDRESS</h1>
+                    <p>58 Ralph Ave</p>
+                    <p>New York, New York 1111</p>
+                    <p>P:+1 180 000 1111</p>
+                    <p>E:contact@email.com</p>
+                </div>
+                <div class="box-footer">
+                    <h1>OPEN HOURS</h1>
+                    <div class="box-info">
+                        <span>Monday <strong>9:00-24:00</strong></span>
+                        <span>Tuesday <strong>9:00-24:00</strong></span>
+                        <span>Wednesday <strong>9:00-24:00</strong></span>
+                        <span>Thursday <strong>9:00-24:00</strong></span>
+                        <span>Friday <strong>9:00-24:00</strong></span>
+                        <span>Saturday <strong>9:00-24:00</strong></span>
+                        <span>Sunday <strong>Closed</strong></span>
+
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <h1>MORE INFO</h1>
+                    <div class="link-footer">
+                        <a href="">Menu</a>
+                        <a href="">Aboute</a>
+                        <a href="">Reservation</a>
+                        <a href="">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction : true,
+                },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+    </script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        lightGallery(document.querySelector(".garelly-swiper"));
+    </script>
+</body>
+</html>
